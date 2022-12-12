@@ -3,7 +3,7 @@ const data = [
     flavor: 'Ice Cream',
     icon: require('../images/icecream_donut.png'),
     price: '36',
-    storeName: 'Dunkins',
+    storeName: "Dunkin's",
     color: 'aliceblue',
     accent: 'lightblue'
   },
@@ -11,7 +11,7 @@ const data = [
     flavor: 'Strawberry',
     icon: require('../images/strawberry_donut.png'),
     price: '45',
-    storeName: 'Dunkins',
+    storeName: "Dunkin's",
     color: 'coral',
     accent: 'lightcoral'
   },
@@ -19,7 +19,7 @@ const data = [
     flavor: 'Grape Ape',
     icon: require('../images/grape_donut.png'),
     price: '84',
-    storeName: 'Dunkins',
+    storeName: "Dunkin's",
     color: 'cyan',
     accent: 'lightcyan'
   },
@@ -27,7 +27,7 @@ const data = [
     flavor: 'Strawberry',
     icon: require('../images/chocolate_donut.png'),
     price: '95',
-    storeName: 'Dunkins',
+    storeName: "Dunkin's",
     color: 'chocolate',
     accent: 'brown'
   }

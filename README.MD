@@ -52,4 +52,4 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2022 [Tyrone Ward](https://github.com/Tyrone-Ward).
 
-This project is [Apache License 2.0](https://github.com/Tyrone-Ward/donutAppUI/LICENSE) licensed. Some of the dependencies are licensed differently.
+This project is [Apache License 2.0](https://github.com/Tyrone-Ward/donutAppUI/blob/main/LICENSE) licensed. Some of the dependencies are licensed differently.

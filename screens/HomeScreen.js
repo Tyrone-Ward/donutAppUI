@@ -1,10 +1,9 @@
-import { StyleSheet, Text, View, Pressable, FlatList, TouchableOpacity, Image, Dimensions } from 'react-native'
+import { StyleSheet, Text, View, FlatList, TouchableOpacity, Image, Dimensions } from 'react-native'
 import { useHeaderHeight } from '@react-navigation/elements'
 import React, { useState } from 'react'
 import { Ionicons } from '@expo/vector-icons'
 import donutData from '../assets/data/donutData'
 import headerData from '../assets/data/headerData'
-import { ScrollView } from 'react-native-gesture-handler'
 
 const windowWidth = Dimensions.get('window').width
 
@@ -20,26 +19,25 @@ const Item = ({ item, onPress, backgroundColor, textColor, opacity, borderWidth 
 )
 
 const MainContentItem = ({ item, color, accentColor }) => (
-  <Pressable style={{ padding: 6 }}>
+  <TouchableOpacity style={{ padding: 6 }}>
     <View style={[styles.mainContentIndividual, { overflow: 'hidden', backgroundColor: color, flexDirection: 'column', justifyContent: 'space-between' }]}>
       <View style={{ alignItems: 'flex-end' }}>
-        <Text
-          style={{
-            paddingLeft: 9,
-            color: 'black',
-            width: 63,
-            height: 36,
-            backgroundColor: accentColor,
-            borderWidth: 0,
-            borderColor: 'black',
-            fontSize: 27,
-            borderTopWidth: 0,
-            borderBottomLeftRadius: 18,
-            borderRightWidth: 0
-          }}
-        >
-          ${item.price}
-        </Text>
+        <View style={{ borderBottomLeftRadius: 18, overflow: 'hidden' }}>
+          <Text
+            style={{
+              paddingLeft: 9,
+              paddingTop: 4.5,
+              color: 'black',
+              width: 63,
+              height: 36,
+              backgroundColor: accentColor,
+              borderWidth: 0,
+              fontSize: 27
+            }}
+          >
+            ${item.price}
+          </Text>
+        </View>
       </View>
       <View style={{ alignItems: 'center' }}>
         <Image source={item.icon} style={{ height: 72, width: 72 }} />
@@ -55,7 +53,7 @@ const MainContentItem = ({ item, color, accentColor }) => (
         <Text style={{ fontSize: 20, fontWeight: 'bold', textDecorationLine: 'underline' }}>Add</Text>
       </View>
     </View>
-  </Pressable>
+  </TouchableOpacity>
 )
 
 const HomeScreen = () => {
@@ -96,7 +94,9 @@ const HomeScreen = () => {
           <Text>Delivery Charges Included</Text>
         </View>
         <View style={{ justifyContent: 'center' }}>
-          <Text style={{ fontSize: 27, fontWeight: 'bold', textDecorationLine: 'underline' }}>View Cart</Text>
+          <TouchableOpacity>
+            <Text style={{ fontSize: 27, fontWeight: 'bold', textDecorationLine: 'underline' }}>View Cart</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -107,8 +107,9 @@ export default HomeScreen
 
 const styles = StyleSheet.create({
   container: {
+    overflow: 'visible',
     backgroundColor: 'white',
-    flex: 1,
+    flex: 0.99,
     paddingHorizontal: 18
   },
   welcome: {
@@ -129,7 +130,7 @@ const styles = StyleSheet.create({
     fontSize: 18
   },
   mainContent: {
-    flex: 0.8,
+    flex: 0.7,
     paddingTop: 36,
     borderWidth: 0,
     borderColor: 'tomato'
@@ -143,11 +144,11 @@ const styles = StyleSheet.create({
   },
   shoppingCart: {
     paddingHorizontal: 18,
+    marginTop: 18,
     flex: 0.15,
     justifyContent: 'space-between',
     flexDirection: 'row',
     borderWidth: 1,
-    borderColor: 'tomato',
     borderRadius: 15,
     borderColor: 'darkgray'
   }
