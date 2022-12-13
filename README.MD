@@ -4,6 +4,10 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
 
+[Dribbble](https://dribbble.com/shots/19649140-App-UI) design by DStudio
+
+![](https://cdn.dribbble.com/userupload/3799484/file/original-60cc03e099e8817ed0293890544d816e.png?compress=1&resize=600x450)
+
 ## 💻 Install
 
 Make sure you have [Node.js](http://nodejs.org/) and the [Expo](https://docs.expo.dev/) installed.
@@ -26,9 +30,9 @@ expo start
 
 <br>
 
-## 💙 question FAQ
+## 💙 Questions
 
-If you have any question, please send me a DM on Twitter
+If you have any question, please send me a DM on Twitter.
 
 <br>
 
